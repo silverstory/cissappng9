@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
+  <span>
+    <img src="assets/img/angular_whiteTransparent.svg" class="angular-logo">
+    OP - CISS
+  </span>
+  <span class="fill-remaining-space"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item *ngIf="!isLoggedIn" routerLink="login">
+      <mat-icon>perm_identity</mat-icon>
+      <span>Login</span>
+    </button>
+    <button mat-menu-item *ngIf="isLoggedIn" (click)="onLogout()">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

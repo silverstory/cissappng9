@@ -1,0 +1,5 @@
+<zxing-scanner start="true" [torch]="torch" (scanSuccess)="handleQrCodeResult($event)" cssClass="max-video"></zxing-scanner>
+<p>
+  Result:
+  <strong>{{ qrResultString }}</strong>
+</p>
