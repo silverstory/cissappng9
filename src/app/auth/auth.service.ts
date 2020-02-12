@@ -21,7 +21,7 @@ export class AuthService {
   // authToken: any;
   // user: any;
 
-  private userServiceUrl = 'http://192.168.23.8/users';
+  private userServiceUrl = 'http://58.69.10.202/users';
 
   public loggedIn = new BehaviorSubject<boolean>(false); // {1}
 

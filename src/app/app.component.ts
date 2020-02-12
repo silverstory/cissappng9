@@ -12,7 +12,7 @@ import { routerTransition } from './router.animations';
 export class AppComponent {
 
   title = 'cissappng9';
-  private api = 'http://192.168.23.8/api';
+  private api = 'http://58.69.10.202/api';
 
   constructor(
     private http: HttpClient,
