@@ -13,9 +13,9 @@ const httpOptions = {
 })
 export class MydataserviceService {
   public isLoggedIn = false;
-  private api = 'http//58.69.10.202/api';
+  private api = 'http//192.168.23.8/api';
   public image_source = '-';
-  public socket_ip = '192.68.23.8';
+  public socket_ip = '192.168.23.8';
 
   public userName: string;
   public usertype: string;

@@ -17,7 +17,7 @@ const httpOptions = {
 })
 export class ProfileService {
 
-  private api = 'http://58.69.10.202/api';
+  private api = 'http://192.168.23.8/api';
 
   constructor(
     private http: HttpClient) { }
